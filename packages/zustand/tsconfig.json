@@ -1,0 +1,10 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "paths": {
+      "zustand": ["./src/index.ts"],
+      "zustand/*": ["./src/*.ts"]
+    }
+  },
+  "include": ["src"]
+}
