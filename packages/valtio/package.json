@@ -1,0 +1,53 @@
+{
+  "name": "custom-valtio",
+  "version": "1.0.0",
+  "description": "A custom implementation of Valtio",
+  "author": "cjhw",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "test": "jest --passWithNoTests --config jest.config.ts",
+    "build": "pnpm run -w build:valtio",
+    "prepublishOnly": "pnpm run build",
+    "typecheck": "tsc"
+  },
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.mjs"
+      },
+      "require": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.cjs"
+      }
+    }
+  },
+  "keywords": [
+    "react",
+    "state",
+    "manager",
+    "management",
+    "valtio"
+  ],
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "license": "MIT",
+  "engines": {
+    "node": ">=12.7.0"
+  },
+  "contributors": [],
+  "bugs": {
+    "url": "https://github.com/cjhw/react-state/issues"
+  },
+  "homepage": "https://github.com/cjhw/react-state",
+  "dependencies": {},
+  "devDependencies": {},
+  "peerDependencies": {
+    "react": ">=18.0"
+  }
+}

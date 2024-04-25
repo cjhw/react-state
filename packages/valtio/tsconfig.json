@@ -1,0 +1,10 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "paths": {
+      "valtio": ["./src/index.ts"],
+      "valtio/*": ["./src/*.ts"]
+    }
+  },
+  "include": ["src"]
+}

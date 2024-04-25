@@ -17,7 +17,9 @@
     "prettier:ci": "prettier '**/{examples,src,__tests__,website}/**/*.{js,jsx,ts,tsx,md}' --list-different",
     "typecheck": "pnpm -r --parallel run typecheck",
     "build": "concurrently 'pnpm:build:*'",
-    "build:zustand": "rollup -c --package zustand"
+    "build:zustand": "rollup -c --package zustand",
+    "build:zustand": "rollup -c --package zustand",
+    "build:valtio": "rollup -c --package valtio"
   },
   "prettier": {
     "semi": false,

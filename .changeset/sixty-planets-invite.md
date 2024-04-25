@@ -1,0 +1,5 @@
+---
+"custom-valtio": major
+---
+
+init
