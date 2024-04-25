@@ -134,6 +134,12 @@ importers:
 
   packages/immer: {}
 
+  packages/jotai:
+    dependencies:
+      react:
+        specifier: '>=17.0.0'
+        version: 18.2.0
+
   packages/zustand:
     dependencies:
       react:

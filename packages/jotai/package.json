@@ -1,0 +1,51 @@
+{
+  "name": "custom-jotai",
+  "version": "2.0.0",
+  "description": "A custom implementation of Jotai",
+  "author": "cjhw",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --passWithNoTests --config jest.config.ts",
+    "build": "pnpm run -w build:jotai",
+    "prepublishOnly": "pnpm run build",
+    "typecheck": "tsc"
+  },
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.mjs"
+      },
+      "require": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.cjs"
+      }
+    }
+  },
+  "keywords": [
+    "react",
+    "state",
+    "manager",
+    "management",
+    "jotai"
+  ],
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "license": "MIT",
+  "engines": {
+    "node": ">=12.7.0"
+  },
+  "contributors": [],
+  "bugs": {
+    "url": "https://github.com/cjhw/react-state/issues"
+  },
+  "homepage": "https://github.com/cjhw/react-state",
+  "dependencies": {},
+  "devDependencies": {},
+  "peerDependencies": {
+    "react": ">=17.0.0"
+  }
+}
