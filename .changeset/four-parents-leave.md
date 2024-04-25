@@ -1,5 +1,0 @@
----
-"custom-jotai": minor
----
-
-init
