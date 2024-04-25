@@ -1,0 +1,9 @@
+{
+  "changelog": [
+    "@changesets/changelog-github",
+    { "repo": "cjhw/react-state" }
+  ],
+  "access": "public",
+  "baseBranch": "main",
+  "tag": true
+}

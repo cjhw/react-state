@@ -132,6 +132,8 @@ importers:
         specifier: ^5.3.3
         version: 5.4.5
 
+  packages/immer: {}
+
   packages/zustand:
     dependencies:
       react:

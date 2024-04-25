@@ -1,6 +1,6 @@
 {
   "name": "custom-zustand",
-  "version": "1.0.0",
+  "version": "3.0.0",
   "description": "A custom implementation of Zustand",
   "author": "cjhw",
   "type": "module",
@@ -42,9 +42,9 @@
   },
   "contributors": [],
   "bugs": {
-    "url": "https://github.com/cjhw/state-management-collection/issues"
+    "url": "https://github.com/cjhw/react-state/issues"
   },
-  "homepage": "https://github.com/cjhw/state-management-collection",
+  "homepage": "https://github.com/cjhw/react-state",
   "dependencies": {
     "use-sync-external-store": "^1.2.0"
   },
